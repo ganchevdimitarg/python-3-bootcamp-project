@@ -24,13 +24,11 @@ def override_get_db():
     finally:
         db.close()
 
-# this is the login user
 def override_get_current_user():
     return {"id": 1,"username": "admin", "role": "admin"}
 
 client = TestClient(app)
 
-# create a temp todo in db
 @pytest.fixture
 def test_todo():
     todo = Todos(
@@ -49,7 +47,6 @@ def test_todo():
         connection.execute(text("DELETE FROM todos;"))
         connection.commit()
 
-# create a temp user in db
 @pytest.fixture
 def test_user():
     user = User(
