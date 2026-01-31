@@ -118,3 +118,9 @@ target_metadata = models.Base.metadata
 pip install pytest
 pip install httpx
 ```
+
+# for async testing
+```sh
+pip install pytest-asyncio
+```
+# and put @pytest.mark.asyncio on the test
