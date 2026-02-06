@@ -123,3 +123,8 @@ pip install httpx
 pip install aiofiles
 pip install jinja2
 ```
+
+# auto-generated requirements file
+```shell
+pip freeze > requirements.txt
+```

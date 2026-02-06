@@ -1,7 +1,7 @@
 testdb.db
 /.idea
 
-/fastapienv
+/fastapienv/
 
 TodoApp/.idea
 TodoApp/.venv
