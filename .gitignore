@@ -1,0 +1,7 @@
+testdb.db
+
+.idea
+/fastapienv
+
+TodoApp/.idea
+TodoApp/.venv

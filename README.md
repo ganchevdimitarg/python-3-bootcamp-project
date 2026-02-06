@@ -45,7 +45,7 @@ from starlette import status
 ```
 
 # SQL ORM
-```python
+```sh
 pip install sqlalchemy
 ```
 
@@ -117,4 +117,9 @@ target_metadata = models.Base.metadata
 ```sh
 pip install pytest
 pip install httpx
+```
+# for full stack app should install:
+```sh
+pip install aiofiles
+pip install jinja2
 ```

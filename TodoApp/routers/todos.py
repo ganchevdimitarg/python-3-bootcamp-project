@@ -9,7 +9,10 @@ from ..TodoRequest import TodoRequest
 from .DatabaseConnection import db_dependency
 from .auth import get_current_user
 
-router = APIRouter()
+router = APIRouter(
+    prefix='/todos',
+    tags=['todos']
+)
 user_dependency = Annotated[dict, Depends(get_current_user)]
 
 
