@@ -15,7 +15,6 @@ router = APIRouter(
 )
 user_dependency = Annotated[dict, Depends(get_current_user)]
 
-
 @router.get("/")
 async def get_user_todos(user: user_dependency, db: db_dependency):
     has_auth_user(user)
